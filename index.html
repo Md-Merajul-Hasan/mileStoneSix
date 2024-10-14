@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy Home Page</title>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <!-- navbar section -->
+        <section class="w-5/6 lg:w-11/12 my-14 mx-auto">
+            <nav class="flex justify-between items-center">
+                <!-- icon and name of company -->
+                <div class="flex gap-2 items-center">
+                    <img class="h-5" src="images/logo.webp" alt="logo">
+                    <p class="font-extrabold text-3xl">Peddy</p>
+                </div>
+                <!-- some options -->
+                <div class="absolute invisible lg:relative lg:visible">
+                    <ul class="flex gap-6">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- users photo -->
+                <div class="w-6 h-6 absolute invisible lg:relative lg:visible">
+                    <img src="images/user.png" alt="user photo">
+                </div>
+                <div class="relative lg:absolute lg:invisible h-9 w-9">
+                    <img src="images/menu.png" alt="menu">
+                </div>
+            </nav>
+        </section>
+        <!-- banner section -->
+        <section class="text-center w-5/6 lg:w-1/2 mx-auto">
+            <div class="flex gap-3 justify-center items-center">
+                <h1 class="font-semibold text-gray-400 text-normal lg:text-2xl mb-4">Bringing Families Together</h1>
+                <img class="h-7 w-7" src="images/heart.jpg" alt="heart shape">
+            </div>
+            <h2 class="text-3xl md:5xl lg:text-6xl font-bold mb-4">Your Path to Adoption Starts Here</h2>
+            <p class="mb-4 text-sm lg:text-base lg:font-semibold">Research shows that consistent interaction with pets can enrich your life and provide physical, emotional, and psychological benefits. Plus, if you adopt your new animal friend, you'll feel extra good about it.</p>
+            <button class="btn btn-active btn-accent text-white px-8 text-[20px]"><a href="#bestFriend">View More</a></button>
+            <img src="images/pet.webp" alt="">
+        </section>
+    </header>
+    <main id="bestFriend">
+        <!-- bestFriend title and description -->
+        <section class="w-5/6 lg:w-1/2 text-center mx-auto mb-4">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Adopt  Your  Best Friend</h1>
+            <p class="text-gray-400 text-sm md:text-base lg:text-base">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+        </section>
+        <!-- category buttons -->
+        <section class="w-full lg:w-5/6 my-14 mx-auto flex justify-center items-center">
+            <div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-6" id="categorySection">
+
+            </div>
+        </section>
+        <section class="w-5/6 mx-auto flex justify-between text-2xl mb-14">
+            <p class="font-bold">Best Deal For you</p>
+            <button class="btn btn-success text-white text-xl">Sort by Price</button>
+        </section>
+        <section>
+            <div id="loadingSection" class="flex justify-center items-center">
+                
+            </div>
+        </section>
+        <!-- pets container -->
+        <section class="w-5/6 grid grid-cols-4 gap-2 md:gap-6 mx-auto">
+            <div class="grid col-span-3">
+                <div id="pets" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                </div>
+            </div>
+            <div class="border border-solid rounded border-gray-300">
+                <div id="sidebar" class="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-5">
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-white bg-black py-10 flex flex-col gap-5 justify-center items-center md:flex-row md:justify-around md:items-start">
+        <div>
+            <div class="flex gap-2 items-center">
+                <img class="h-5" src="images/logo.webp" alt="logo">
+                <p class="font-extrabold text-3xl">Peddy</p>
+            </div>
+            <div class="my-5">
+            <p>Location: av. Washington 165, NY CA 54003</p>
+            <p>Phone: +31 85 964 47 25</p>
+            <p>Email: info@milestonesixmdmerajulhasan.com</p>
+            <p>Openings hours: 9.00 AM - 5.00 PM</p>
+            </div>
+            <div class="flex gap-5">
+                <div class="h-8 w-8">
+                    <a href="">
+                        <img class="rounded-full" src="images/facebook.jpg" alt="">
+                    </a>
+                </div>
+                <div class="h-6 w-6 rounded-full">
+                    <a href="">
+                        <img class="rounded-full" src="images/x.avif" alt="">
+                    </a>
+                </div>
+                <div class="h-6 w-6 rounded-full">
+                    <a href="">
+                        <img class="rounded-full" src="images/youtube-logo-2431.png" alt="">
+                    </a>
+                </div>
+                <div class="h-6 w-6 rounded-full">
+                    <a href="">
+                        <img class="rounded-full" src="images/instagram.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="text-xl font-semibold">Useful Links</p>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Animals</a></li>
+                <li><a href="">Foundation</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <p  class="text-xl font-semibold mb-5">Drop a Message</p>
+            <form action="">
+                <label for=""><input type="email" placeholder="write your mail"></label>
+                <br >
+                <label for=""><button class="btn px-5 btn-active btn-accent mt-5">Subscribe</button>
+                </label>
+            </form>
+        </div>
+    </footer>
+    <dialog id="detailsModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="modalContainer" class="text-sm text-gray-800">
+
+          </div>
+          <div class="modal-action">
+            <form method="dialog" class="w-full">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn rounded-xl btn-block bg-green-200">Cancel</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    <script src="js/pets.js"></script>
+</body>
+</html>
